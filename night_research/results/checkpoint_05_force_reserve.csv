@@ -1,0 +1,11 @@
+﻿controller,payload_mass_kg,configured_aggregate_thrust_to_weight_ratio,force_cap_per_vehicle_N,actual_force_peak_per_vehicle_N,minimum_unused_norm_cap_N,any_vehicle_command_clipping_sample_fraction,fine_step_agreement,case_id,scope
+independent,0.3,1.863987185088103,12.8,7.10137705751083,5.698622942489171,0.0,True,f878201c78afef44aadb,Assumed vector force cap; not identified continuous or peak hardware rating.
+independent,0.6,1.6309887869520898,12.8,8.316914170887607,4.483085829112394,0.0,True,950f3830dbe5452de4b0,Assumed vector force cap; not identified continuous or peak hardware rating.
+independent,1.0,1.3979903888160772,12.8,9.94146467276229,2.8585353272377105,0.0,True,9929008c2c5a2b972962,Assumed vector force cap; not identified continuous or peak hardware rating.
+independent,1.4,1.2232415902140674,12.8,11.563891286240336,1.2361087137596645,0.0,True,8932d217b00ad7749236,Assumed vector force cap; not identified continuous or peak hardware rating.
+independent,1.8,1.08732585796806,12.8,12.799993048025312,6.951974688362839e-06,0.06845627259441582,True,922090fb6a15b713073a,Assumed vector force cap; not identified continuous or peak hardware rating.
+cooperative,0.3,1.863987185088103,12.8,7.0339125225186825,5.766087477481318,0.0,True,5e45b8ef828620469483,Assumed vector force cap; not identified continuous or peak hardware rating.
+cooperative,0.6,1.6309887869520898,12.8,8.108157427028123,4.691842572971877,0.0,True,38d04abb765715ca5b28,Assumed vector force cap; not identified continuous or peak hardware rating.
+cooperative,1.0,1.3979903888160772,12.8,9.542192053267199,3.257807946732802,0.0,True,64b7fe9eb6c53fefc6cb,Assumed vector force cap; not identified continuous or peak hardware rating.
+cooperative,1.4,1.2232415902140674,12.8,10.969558008082972,1.830441991917029,0.0,True,dcfdc638b4f3e1dc8c8b,Assumed vector force cap; not identified continuous or peak hardware rating.
+cooperative,1.8,1.08732585796806,12.8,12.391017158139768,0.40898284186023304,0.0,True,339b6187b1ebe147192a,Assumed vector force cap; not identified continuous or peak hardware rating.

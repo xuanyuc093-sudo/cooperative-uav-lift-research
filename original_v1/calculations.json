@@ -1,0 +1,137 @@
+{
+  "gravity": 9.81,
+  "hover": [
+    {
+      "payload_kg": 0.3,
+      "total_mass_kg": 2.0999999999999996,
+      "lambda_available": 2.329983981360128,
+      "lambda_operational": 1.863987185088103,
+      "tension_per_cable_N": 1.0439583947988698,
+      "thrust_per_uav_N": 6.876276400063557,
+      "thrust_fraction_of_available": 0.4297672750039723,
+      "thrust_fraction_of_operational": 0.5372090937549654,
+      "vehicle_tilt_deg": 2.9764564892271057
+    },
+    {
+      "payload_kg": 0.6,
+      "total_mass_kg": 2.4,
+      "lambda_available": 2.038735983690112,
+      "lambda_operational": 1.6309887869520898,
+      "tension_per_cable_N": 2.0879167895977395,
+      "thrust_per_uav_N": 7.8804223567194756,
+      "thrust_fraction_of_available": 0.4925263972949672,
+      "thrust_fraction_of_operational": 0.615657996618709,
+      "vehicle_tilt_deg": 5.199172016981626
+    },
+    {
+      "payload_kg": 1.0,
+      "total_mass_kg": 2.8,
+      "lambda_available": 1.747487986020096,
+      "lambda_operational": 1.3979903888160772,
+      "tension_per_cable_N": 3.4798613159962324,
+      "thrust_per_uav_N": 9.23303150533816,
+      "thrust_fraction_of_available": 0.577064469083635,
+      "thrust_fraction_of_operational": 0.7213305863545436,
+      "vehicle_tilt_deg": 7.406313160610205
+    },
+    {
+      "payload_kg": 1.4,
+      "total_mass_kg": 3.1999999999999997,
+      "lambda_available": 1.529051987767584,
+      "lambda_operational": 1.2232415902140674,
+      "tension_per_cable_N": 4.871805842394725,
+      "thrust_per_uav_N": 10.595834283622569,
+      "thrust_fraction_of_available": 0.6622396427264106,
+      "thrust_fraction_of_operational": 0.8277995534080131,
+      "vehicle_tilt_deg": 9.047645128712887
+    },
+    {
+      "payload_kg": 1.8,
+      "total_mass_kg": 3.5999999999999996,
+      "lambda_available": 1.359157322460075,
+      "lambda_operational": 1.08732585796806,
+      "tension_per_cable_N": 6.263750368793219,
+      "thrust_per_uav_N": 11.965348163867075,
+      "thrust_fraction_of_available": 0.7478342602416922,
+      "thrust_fraction_of_operational": 0.9347928253021152,
+      "vehicle_tilt_deg": 10.314104815618197
+    }
+  ],
+  "baseline_uav_positions_m": [
+    [
+      0.4920201433256687,
+      0.0,
+      1.9896926207859085
+    ],
+    [
+      -0.24601007166283423,
+      0.42610194329368967,
+      1.9896926207859085
+    ],
+    [
+      -0.24601007166283456,
+      -0.4261019432936895,
+      1.9896926207859085
+    ]
+  ],
+  "baseline_thrust_vectors_N": [
+    [
+      0.714109599630289,
+      0.0,
+      7.848
+    ],
+    [
+      -0.3570547998151443,
+      0.6184370543661649,
+      7.848
+    ],
+    [
+      -0.35705479981514476,
+      -0.6184370543661647,
+      7.848
+    ]
+  ],
+  "baseline_inter_uav_distances_m": [
+    0.8522038865873791,
+    0.8522038865873793,
+    0.8522038865873791
+  ],
+  "baseline_wrench_residual_N_Nm": [
+    -1.1102230246251565e-16,
+    2.220446049250313e-16,
+    0.0,
+    1.1102230246251565e-16,
+    1.1102230246251565e-16,
+    1.3877787807814457e-17
+  ],
+  "vector_force_map_rank": 6,
+  "fixed_direction_tension_map_rank": 3,
+  "screening": {
+    "braking_speed_m_s": 1.658673844758581,
+    "turning_speed_at_radius_2m_m_s": 1.859982623977999,
+    "equivalent_pendulum_acceleration_limit_m_s2": 1.7297676807500415,
+    "aggregate_drag_speed_no_wind_no_acceleration_m_s": 10.93144873599877
+  },
+  "pendulum_reference": [
+    {
+      "length_m": 0.5,
+      "fixed_support_period_s": 1.4185033534428875
+    },
+    {
+      "length_m": 1,
+      "fixed_support_period_s": 2.0060666807106475
+    },
+    {
+      "length_m": 2,
+      "fixed_support_period_s": 2.837006706885775
+    },
+    {
+      "length_m": 5,
+      "fixed_support_period_s": 4.485701465466374
+    },
+    {
+      "length_m": 20,
+      "fixed_support_period_s": 8.971402930932747
+    }
+  ]
+}

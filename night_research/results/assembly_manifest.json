@@ -1,0 +1,20 @@
+{
+  "generated_utc": "2026-10-31T22:10:21.525800+00:00",
+  "output": "/workspace/uav_lift_overnight/comprehensive_report.pdf",
+  "pages": 38,
+  "parts": [
+    {
+      "path": "/workspace/uav_lift_report/report.pdf",
+      "page_count": 17,
+      "starts_on_page": 1,
+      "sha256": "18732594eed305cb7648efc11a32b3e5437a88862e21625131ed7bbd80a04030"
+    },
+    {
+      "path": "/workspace/uav_lift_overnight/overnight_report.pdf",
+      "page_count": 21,
+      "starts_on_page": 18,
+      "sha256": "3cb905b766c3e94f9e5ab4535e9f351915514d122f83d710b293e1668c8f312a"
+    }
+  ],
+  "interpretation": "Reading assembly only; original PDF unchanged. Supplement distinguishes evidence, assumptions and simulations."
+}

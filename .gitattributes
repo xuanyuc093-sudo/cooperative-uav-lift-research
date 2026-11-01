@@ -1,0 +1,7 @@
+# Preserve the archived byte-level checksums, including existing CSV CRLFs.
+* -text
+*.pdf binary
+*.docx binary
+*.npz binary
+*.png binary
+*.jpg binary

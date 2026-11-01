@@ -1,0 +1,53 @@
+{
+  "case_id": "7dd5e052196c5721f2cb",
+  "family": "single_factor_inclination_deg",
+  "queue_index": 182,
+  "model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+  "started_utc": "2026-10-31T19:24:25.528063+00:00",
+  "config": {
+    "topology": "offset_common",
+    "controller": "independent",
+    "vehicle_mass": 0.6,
+    "payload_mass": 0.6,
+    "cable_length": 1.0,
+    "inclination_deg": 10.0,
+    "attachment_radius": 0.15,
+    "attachment_height": 0.05,
+    "stiffness": 1000.0,
+    "damping": 1.0,
+    "force_cap": 12.8,
+    "tilt_deg": 25.0,
+    "actuator_tau": 0.04,
+    "gravity": 9.81,
+    "density": 1.225,
+    "drag_vehicle": 0.02,
+    "drag_payload": 0.09,
+    "wind": 0.0,
+    "command_delay": 0.0,
+    "payload_mass_error": 0.0,
+    "speed": 1.0,
+    "acceleration": 0.5,
+    "jerk": 1.0,
+    "yaw_target_deg": 0.0,
+    "initial_roll_deg": 0.0,
+    "dt": 0.001,
+    "control_dt": 0.01,
+    "seed": 0,
+    "log_dt": 0.02
+  },
+  "stage": "initial_research_constraints_infeasible",
+  "finished_utc": "2026-10-31T19:24:25.528481+00:00",
+  "initial_force_N": [
+    7.855621417123836,
+    7.855621417123836,
+    7.855621417123836
+  ],
+  "initial_tilt_deg": [
+    2.5240638780266473,
+    2.5240638780266473,
+    2.5240638780266473
+  ],
+  "initial_min_distance_m": 0.3013666754625405,
+  "research_screen_met": false,
+  "explanation": "No time integration: initial force/tilt/separation research constraints already violated."
+}

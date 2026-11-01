@@ -1,0 +1,32 @@
+{
+  "verified_utc": "2026-10-31T22:11:29.511423+00:00",
+  "research_cutoff_utc": "2026-10-31T22:00:00Z",
+  "research_stopped": true,
+  "new_simulation_after_cutoff": false,
+  "records": 620,
+  "complete_integrations": 564,
+  "stages": {
+    "integrated": 564,
+    "divergence_or_state_guard": 47,
+    "initial_research_constraints_infeasible": 8,
+    "wall_clock_deadline": 1
+  },
+  "batch_trace_files": 612,
+  "data_integrity_violations": [],
+  "supplement_pdf_pages": 21,
+  "combined_pdf_pages": 38,
+  "pdf_horizontal_boundary_flags": [],
+  "summary_page_visually_reviewed": true,
+  "word_markdown_pdf_summary_checked": true,
+  "zip_crc_check": "passed",
+  "extracted_package_file_audit": "passed",
+  "archive_bytes": 57375139,
+  "archive_sha256": "dc51ec4189fc9d771a9b0c65ad41bb7d8ed65e6263622f9fbb85fd5cb75bcfea",
+  "files": {
+    "overnight_report.pdf": "3cb905b766c3e94f9e5ab4535e9f351915514d122f83d710b293e1668c8f312a",
+    "overnight_report.docx": "4dbc73a13cbcb2b255d466fb81bd883310a480daddf4ded3707cb71e7e77a0d6",
+    "overnight_report.md": "660410611ba487a86e0462771c4f0f8a7d027cb6d2ae1a9b900ad8804c40a6b2",
+    "comprehensive_report.pdf": "7beb55c4d41b223c1f7ec99dbb6303cabdcbefbb57577c1f5f65f4f3c5c2ba34"
+  },
+  "scope": "Delivery checks only, not flight safety certification."
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "h": 0.002,
+    "relative_energy_drift": 0.0005023790466528785,
+    "p_drift": 6.369057972232327e-17,
+    "L_drift": 7.245825694230315e-10,
+    "finite_difference_initial_energy_derivative": -2.1951356221627805e-06
+  },
+  {
+    "h": 0.001,
+    "relative_energy_drift": 0.0004256397091806189,
+    "p_drift": 1.7433755170605403e-16,
+    "L_drift": 4.106944268497994e-11,
+    "finite_difference_initial_energy_derivative": -2.1951356221627805e-06
+  },
+  {
+    "h": 0.0005,
+    "relative_energy_drift": 1.523214167316966e-05,
+    "p_drift": 1.8193933307329567e-16,
+    "L_drift": 2.430451863254956e-12,
+    "finite_difference_initial_energy_derivative": -2.1951356221627805e-06
+  },
+  {
+    "h": 0.00025,
+    "relative_energy_drift": 6.732167366575752e-06,
+    "p_drift": 4.37549395536371e-16,
+    "L_drift": 2.1237810935695992e-13,
+    "finite_difference_initial_energy_derivative": -2.1951356221627805e-06
+  }
+]

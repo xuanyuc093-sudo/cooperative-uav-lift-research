@@ -1,0 +1,29 @@
+{
+  "time_utc": "2026-10-31T19:59:39.132948+00:00",
+  "downloads": [
+    {
+      "name": "li_loianno_nmpc_2023",
+      "url": "https://arxiv.org/pdf/2303.06165v2",
+      "final_url": "https://arxiv.org/pdf/2303.06165v2",
+      "status": "downloaded",
+      "bytes": 5451885,
+      "sha256": "685b1d37ec813f243757e957fac85b13c73a150bb183fa0c3e1f947e535aec6d"
+    },
+    {
+      "name": "wahba_allocation_2024",
+      "url": "https://arxiv.org/pdf/2304.02359v2",
+      "final_url": "https://arxiv.org/pdf/2304.02359v2",
+      "status": "downloaded",
+      "bytes": 4676408,
+      "sha256": "d4fc796c862ccd77c40137f6138db693ccc6ac4983138e95905f77c76a389ccd"
+    },
+    {
+      "name": "sun_franchi_fullpose_2023",
+      "url": "https://arxiv.org/pdf/2301.08545",
+      "final_url": "https://arxiv.org/pdf/2301.08545",
+      "status": "downloaded",
+      "bytes": 1752468,
+      "sha256": "d297ddf8a392ba64bc621bf9f4c3b143e6d1838f6110ced017ba73a3080ac7ff"
+    }
+  ]
+}

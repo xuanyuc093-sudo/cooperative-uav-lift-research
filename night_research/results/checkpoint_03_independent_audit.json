@@ -1,0 +1,193 @@
+{
+  "allocation": {
+    "inputs": {
+      "arm_m": 0.17,
+      "x_y_coordinate_m": 0.12020815280171308,
+      "yaw_drag_ratio_m": 0.016,
+      "per_rotor_force_cap_N": 4.0,
+      "scope": "Hypothetical static X-quad. No actuator identification or flight validation."
+    },
+    "allocation_matrix": [
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.12020815280171308,
+        0.12020815280171308,
+        -0.12020815280171308,
+        -0.12020815280171308
+      ],
+      [
+        -0.12020815280171308,
+        0.12020815280171308,
+        0.12020815280171308,
+        -0.12020815280171308
+      ],
+      [
+        0.016,
+        -0.016,
+        0.016,
+        -0.016
+      ]
+    ],
+    "desired_wrench_N_Nm": [
+      12.8,
+      0.1,
+      0.0,
+      0.05
+    ],
+    "exact_unbounded_rotor_forces_N": [
+      4.189222582701925,
+      2.6267225827019254,
+      3.773277417298075,
+      2.2107774172980745
+    ],
+    "scalar_total_check": true,
+    "rotor_feasible": false,
+    "clipped": {
+      "rotors_N": [
+        4.0,
+        2.6267225827019254,
+        3.773277417298075,
+        2.2107774172980745
+      ],
+      "achieved_wrench": [
+        12.610777417298076,
+        0.07725390286503198,
+        0.02274609713496789,
+        0.0469724386767692
+      ],
+      "residual": [
+        -0.18922258270192494,
+        -0.02274609713496803,
+        0.02274609713496789,
+        -0.0030275613232308013
+      ]
+    },
+    "weighted_least_squares": {
+      "rotors_N": [
+        3.9999999999999996,
+        2.801355998769844,
+        3.5841275985195096,
+        2.385410833365993
+      ],
+      "achieved_wrench": [
+        12.770894430655346,
+        0.09999125318318208,
+        8.74681681789502e-06,
+        0.03835777226213874
+      ],
+      "residual": [
+        -0.02910556934465447,
+        -8.746816817922776e-06,
+        8.74681681789502e-06,
+        -0.011642227737861263
+      ],
+      "normalized_weights": [
+        10,
+        100,
+        100,
+        1
+      ]
+    },
+    "rate_example": {
+      "previous_force_N": [
+        1.9701055891798689,
+        1.9701055891798689,
+        1.9701055891798689,
+        1.9701055891798689
+      ],
+      "requested_force_N": [
+        2.25,
+        2.25,
+        2.25,
+        2.25
+      ],
+      "assumed_force_slew_N_s": 20.0,
+      "period_s": 0.01,
+      "rate_feasible": false,
+      "minimum_constant_slew_transition_s": 0.013994720541006556
+    },
+    "one_rotor_failed_observation": "With one rotor unavailable, zero roll/pitch/yaw torques and positive thrust generally cannot all be maintained by a conventional fixed-pitch X quad. Relaxing yaw/spinning recovery is a different dynamic task."
+  },
+  "inelastic_impact": {
+    "scope": "Isolated ideal inelastic event calculation. NOT installed in the running elastic model.",
+    "impulse_N_s": [
+      0.032885121327476126,
+      0.03288512132747611,
+      0.032885121327476126
+    ],
+    "outward_velocity_before_m_s": [
+      0.20000000000000004,
+      0.2,
+      0.20000000000000004
+    ],
+    "radial_velocity_residual_after_m_s": [
+      -2.7755575615628914e-17,
+      -2.7755575615628914e-17,
+      -2.7755575615628914e-17
+    ],
+    "energy_before_J": 0.036000000000000004,
+    "energy_after_J": 0.026134463601757175,
+    "energy_loss_J": 0.009865536398242829,
+    "linear_momentum_drift": 1.3265989636223217e-18,
+    "angular_momentum_drift": 1.0018331643239917e-17,
+    "two_mass_example": {
+      "mass_each_kg": 0.6,
+      "velocity_before_m_s": [
+        1,
+        0
+      ],
+      "impulse_N_s": 0.3,
+      "velocity_after_m_s": [
+        0.5,
+        0.5
+      ],
+      "energy_loss_J": 0.15
+    },
+    "active_set_limitation": "For simultaneous unilateral constraints, a negative impulse invalidates the assumed active set. Do not clip it and retain the same projection."
+  },
+  "record_audit": {
+    "snapshot_utc": "2026-10-31T19:08:40.904993+00:00",
+    "records_read": 117,
+    "model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+    "source_unchanged": true,
+    "integrity_violations": [],
+    "zero_wind_different_seed_repeat_groups": 54,
+    "examples": [
+      {
+        "case_ids": [
+          "19fbe35d8797be653d3e",
+          "d3d853864d6001d1accf"
+        ],
+        "rmse_spread_m": 0.0
+      },
+      {
+        "case_ids": [
+          "a6ae61fa570048f21149",
+          "f6be3825abbf3e4c1db7"
+        ],
+        "rmse_spread_m": 0.0
+      },
+      {
+        "case_ids": [
+          "eef608f85e617a01f26d",
+          "ed7c5e78a3da5bae8d28"
+        ],
+        "rmse_spread_m": 0.0
+      },
+      {
+        "case_ids": [
+          "dc536f6a15c9abf0dd09",
+          "7e7a4d28815a43122a61"
+        ],
+        "rmse_spread_m": 0.0
+      }
+    ],
+    "interpretation": "The seed changes wind phase only. At zero wind, different seeds are deterministic repeat runs, not independent uncertainty trials.",
+    "runtime_model_modified": false
+  }
+}

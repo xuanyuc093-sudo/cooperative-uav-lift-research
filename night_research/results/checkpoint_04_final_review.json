@@ -1,0 +1,27 @@
+{
+  "time_utc": "2026-10-31T20:06:35.612189+00:00",
+  "checkpoint": "04:00 UTC+8",
+  "supplement_pages": 14,
+  "pdf_horizontal_boundary_flags": [],
+  "braking_figure_and_formula_table_visually_reviewed": true,
+  "combined_report_pages": 31,
+  "model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+  "runtime_source_preserved": true,
+  "committed_current_model_records": 288,
+  "stages": {
+    "integrated": 266,
+    "divergence_or_state_guard": 14,
+    "initial_research_constraints_infeasible": 8
+  },
+  "primary_task_findings": [
+    "Finite jerk adds stopping distance under stated ideal assumptions.",
+    "Ground speed and vector wind must be separated in drag and force checks."
+  ],
+  "evidence_audit": [
+    "B1 is numerical only, soft path constraints and no per-motor dynamics.",
+    "B2 and B3 upgrade existing source read scope, not unique new papers.",
+    "No assumption-based number reported as measured flight limit.",
+    "QP setting time not added twice to published total runtime."
+  ],
+  "no_new_advanced_controller_experiment_claimed": true
+}

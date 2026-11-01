@@ -1,0 +1,42 @@
+[
+  {
+    "file": "rotortm_hummingbird.yaml",
+    "url": "https://raw.githubusercontent.com/arplaboratory/RotorTM/7c70274c00174708b65cd518267c73d9c5abea99/rotor_tm_config/config/uav_params/hummingbird.yaml",
+    "bytes": 315
+  },
+  {
+    "file": "rotortm_payload.yaml",
+    "url": "https://raw.githubusercontent.com/arplaboratory/RotorTM/7c70274c00174708b65cd518267c73d9c5abea99/rotor_tm_config/config/load_params/triangular_payload.yaml",
+    "bytes": 255
+  },
+  {
+    "file": "rotortm_cable_3x1m.yaml",
+    "url": "https://raw.githubusercontent.com/arplaboratory/RotorTM/7c70274c00174708b65cd518267c73d9c5abea99/rotor_tm_config/config/attach_mechanism/cable/3_robots_triangular_payload_1m.yaml",
+    "bytes": 452
+  },
+  {
+    "file": "brushless_model_2026.pdf",
+    "url": "https://arxiv.org/pdf/2603.05944",
+    "bytes": 814681
+  },
+  {
+    "file": "nanodrone_benchmark_2025.pdf",
+    "url": "https://arxiv.org/pdf/2512.14450",
+    "bytes": 9493894
+  },
+  {
+    "file": "rotortm_paper.pdf",
+    "url": "https://arxiv.org/pdf/2205.05140",
+    "bytes": 16115931
+  },
+  {
+    "file": "bitcraze_battery.html",
+    "url": "https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/functional-areas/battery_compensation/",
+    "bytes": 45615
+  },
+  {
+    "file": "mn4014_official.html",
+    "url": "https://store.tmotor.com/product/mn4014-kv400-motor-navigator-type.html",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

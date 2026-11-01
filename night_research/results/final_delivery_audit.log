@@ -1,0 +1,36 @@
+{
+  "audited_utc": "2026-10-31T22:07:28.567475+00:00",
+  "research_deadline_utc": "2026-10-31T22:00:00+00:00",
+  "experiment_closed_utc": "2026-10-31T22:00:00.121973+00:00",
+  "running": false,
+  "records": 620,
+  "stages": {
+    "integrated": 564,
+    "divergence_or_state_guard": 47,
+    "initial_research_constraints_infeasible": 8,
+    "wall_clock_deadline": 1
+  },
+  "complete_integrations": 564,
+  "complete_integrations_not_meeting_research_screen": 236,
+  "research_screen_met_records": 328,
+  "fine_step_agreement_records": 328,
+  "effective_configuration_groups": 384,
+  "planned_queue": 7356,
+  "not_submitted": 6736,
+  "last_started_utc": "2026-10-31T21:59:46.149936+00:00",
+  "last_finished_utc": "2026-10-31T22:00:00.056635+00:00",
+  "deadline_interrupted_cases": [
+    {
+      "case_id": "383f4d9477f42e92b717",
+      "started_utc": "2026-10-31T21:59:46.149936+00:00",
+      "finished_utc": "2026-10-31T22:00:00.056635+00:00",
+      "simulation_end_s": 19.6,
+      "intended_duration_s": 21.0
+    }
+  ],
+  "source_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+  "original_v1_checksum_mismatches": [],
+  "trace_files_checked": 612,
+  "integrity_violations": [],
+  "check_scope": "Post-deadline file, label and trace consistency only. No new simulation, research or safety certification."
+}

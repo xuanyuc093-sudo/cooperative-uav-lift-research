@@ -1,0 +1,44 @@
+{
+  "time_utc": "2026-10-31T20:04:31.925225+00:00",
+  "verified_materials": [
+    {
+      "id": "B1",
+      "title": "Nonlinear MPC for Full-Pose Manipulation of a Cable-Suspended Load using Multiple UAVs",
+      "url": "https://arxiv.org/abs/2301.08545v4",
+      "scope": "Original author v4 model, constraints, numerical validation and discussion read; simulation only.",
+      "local": "sources/sun_franchi_fullpose_2023.pdf",
+      "limits": "Soft path constraints; no individual rotor dynamics; not flight evidence."
+    },
+    {
+      "id": "B2",
+      "title": "Li and Loianno IROS 2023 NMPC; deeper verification of R14",
+      "url": "https://arxiv.org/abs/2303.06165v2",
+      "scope": "Original v2 Section II-IV and conclusion read.",
+      "local": "sources/li_loianno_nmpc_2023.pdf",
+      "limits": "Payload-only prediction; tension norm cap is not a sufficient rotor force constraint; not a new unique paper."
+    },
+    {
+      "id": "B3",
+      "title": "Wahba and Honig RA-L 2024 allocation; deeper verification of R13",
+      "url": "https://arxiv.org/abs/2304.02359v2",
+      "scope": "Original v2 geometric/QP architecture, physical table, computing and challenges read.",
+      "local": "sources/wahba_allocation_2024.pdf",
+      "limits": "Physical 3 UAV maximum; laptop 10 UAV timing; one flight per table condition; not new unique paper."
+    },
+    {
+      "id": "B4",
+      "title": "Sun et al Science Robotics 2025; deeper verification of R11",
+      "url": "https://arxiv.org/html/2501.18802v2",
+      "scope": "Stored v2 architecture, experimental localization, planning horizon and frequency reread.",
+      "local": "../uav_lift_report/sources/sun_2025.txt",
+      "limits": "No load sensors does not mean no localization; baselines simulated; not new unique paper."
+    }
+  ],
+  "unavailable_fulltext": {
+    "title": "Distributed NMPC for Cooperative Aerial Manipulation of Cable-Suspended Loads",
+    "doi": "10.1109/LRA.2025.3604703",
+    "institutional_status": "403",
+    "HAL_status": "Access protection",
+    "used_for_quantitative_conclusions": false
+  }
+}

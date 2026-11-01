@@ -1,0 +1,44 @@
+{
+  "generated_utc": "2026-10-31T20:01:14.323379+00:00",
+  "scope": "Analytic kinematics and aggregate force only. No coupled flight or safety certification.",
+  "assumptions": {
+    "initial_acceleration_m_s2": 0.0,
+    "terminal_acceleration_m_s2": 0.0,
+    "constant_speed_during_delay": true,
+    "acceleration_limit_m_s2": 0.5,
+    "jerk_limit_m_s3": 1.0,
+    "delay_s": 0.1,
+    "space_reserve_m": 0.5,
+    "mass_kg": 2.4,
+    "density_kg_m3": 1.225,
+    "aggregate_drag_CdA_m2": 0.15,
+    "wind_constant_for_force_snapshots": true
+  },
+  "polynomial_and_quadrature_max_absolute_difference_m": 2.220446049250313e-16,
+  "existing_motion_profile_crosscheck": "passed for all 7 tabulated positive speeds",
+  "budget_examples": [
+    {
+      "available_distance_m": 3.0,
+      "hypothetical_kinematic_speed_m_s": 1.4157938269933035,
+      "scope": "Kinematic calculation only; no closed-loop stopping guarantee"
+    },
+    {
+      "available_distance_m": 10.0,
+      "hypothetical_kinematic_speed_m_s": 2.9121710351064127,
+      "scope": "Kinematic calculation only; no closed-loop stopping guarantee"
+    },
+    {
+      "available_distance_m": 30.0,
+      "hypothetical_kinematic_speed_m_s": 5.259208774053496,
+      "scope": "Kinematic calculation only; no closed-loop stopping guarantee"
+    }
+  ],
+  "running_model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+  "runtime_model_modified": false,
+  "limitations": [
+    "No initial positive acceleration, gust evolution, estimator error, actuator saturation, cable swing or impact in stopping-distance calculation.",
+    "The chosen acceleration limit is an input, not inferred from thrust-to-weight ratio.",
+    "Aggregate force balance does not enforce per-vehicle, per-motor, cable tension or attitude constraints.",
+    "Drag area and mass are hypothetical B0 aggregate values, not manufacturer-identified parameters."
+  ]
+}

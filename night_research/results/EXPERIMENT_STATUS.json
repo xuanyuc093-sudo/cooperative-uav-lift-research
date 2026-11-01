@@ -1,0 +1,22 @@
+{
+  "running": false,
+  "pid": 1395,
+  "updated_utc": "2026-10-31T22:00:00.121973+00:00",
+  "termination": "deadline_or_stop_file",
+  "cases_this_process": 620,
+  "deadline_utc": "2026-10-31T22:00:00+00:00",
+  "aggregate": {
+    "updated_utc": "2026-10-31T22:00:00.120907+00:00",
+    "records": 620,
+    "stages": {
+      "integrated": 564,
+      "divergence_or_state_guard": 47,
+      "initial_research_constraints_infeasible": 8,
+      "wall_clock_deadline": 1
+    },
+    "research_screen_met_count": 328,
+    "fine_step_agreement_count": 328,
+    "scope": "Counts of simulated research tolerances. Do not equate these to safe flights."
+  },
+  "model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4"
+}

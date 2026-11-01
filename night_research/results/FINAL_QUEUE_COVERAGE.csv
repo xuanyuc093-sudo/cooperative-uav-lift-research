@@ -1,0 +1,14 @@
+﻿family,planned,committed,not_submitted,completed,early_guards,initial_infeasible,deadline_interrupted
+baseline,12,12,0,12,0,0,0
+single_factor_payload_mass,48,48,0,48,0,0,0
+single_factor_speed,48,48,0,44,4,0,0
+single_factor_wind,36,36,0,30,6,0,0
+single_factor_command_delay,36,36,0,32,4,0,0
+single_factor_inclination_deg,36,36,0,28,0,8,0
+single_factor_actuator_tau,36,36,0,36,0,0,0
+single_factor_stiffness,24,24,0,24,0,0,0
+single_factor_payload_mass_error,24,24,0,24,0,0,0
+single_factor_force_cap,24,24,0,24,0,0,0
+single_factor_yaw_target_deg,12,12,0,12,0,0,0
+two_factor,444,284,160,250,33,0,1
+factorial,6576,0,6576,0,0,0,0

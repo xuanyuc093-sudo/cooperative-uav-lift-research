@@ -1,0 +1,54 @@
+[
+  {
+    "file": "freefly_technical.md",
+    "url": "https://docs.freeflysystems.com/products/products/alta-x/untitled-3/technical-specs.md",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "freefly_performance.md",
+    "url": "https://docs.freeflysystems.com/products/products/alta-x/untitled-3/performance-specs.md",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "sun_2025.html",
+    "url": "https://arxiv.org/html/2501.18802v2",
+    "status": 200,
+    "bytes": 336974,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "file": "lee_2014.pdf",
+    "url": "https://arxiv.org/pdf/1403.3684",
+    "status": 200,
+    "bytes": 1448836,
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "rss_2013.pdf",
+    "url": "https://roboticsproceedings.org/rss09/p11.pdf",
+    "status": 200,
+    "bytes": 942900,
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "dji_fc30_manual_v1_1.pdf",
+    "url": "https://dl.djicdn.com/downloads/DJI_FlyCart_30/20250709/DJI_FlyCart_30_User_Manual_v1.1_0709.pdf",
+    "status": 200,
+    "bytes": 25743382,
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "dji_winch_guide.pdf",
+    "url": "https://dl.djicdn.com/downloads/DJI_FlyCart_30/20240110/DJI_FlyCart_30_Winch_System_User_Guide.pdf",
+    "status": 200,
+    "bytes": 8286589,
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "bitcraze_datasheet.pdf",
+    "url": "https://www.bitcraze.io/documentation/hardware/crazyflie_2_1_brushless/crazyflie_2_1_brushless-datasheet.pdf",
+    "status": 200,
+    "bytes": 364069,
+    "content_type": "application/pdf"
+  }
+]

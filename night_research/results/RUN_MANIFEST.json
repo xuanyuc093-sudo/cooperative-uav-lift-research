@@ -1,0 +1,128 @@
+{
+  "started_utc": "2026-10-31T18:17:06.093546+00:00",
+  "deadline_utc": "2026-10-31T22:00:00+00:00",
+  "pid": 1395,
+  "model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+  "model_snapshot": "/workspace/uav_lift_overnight/simulation/model_snapshot_9e8dd1181dc2.py",
+  "verification": {
+    "static_equilibrium_max_state_derivative": {
+      "common": 1.924386576016938e-14,
+      "offset_common": 1.924386576016938e-14,
+      "distributed": 2.220446049250313e-14
+    },
+    "slack_cables_generate_zero_force": true,
+    "conservative_system": {
+      "relative_energy_drift_max": 6.732167366575752e-06,
+      "linear_momentum_drift_max": 4.37549395536371e-16,
+      "angular_momentum_drift_max": 2.1237810935695992e-13,
+      "dt_s": 0.00025,
+      "duration_s": 2.0,
+      "note": "Tension-only activation is nonsmooth. Coarse-step failure and refinement are retained in conservation_diagnostics.json."
+    },
+    "damped_system_max_one_step_energy_increase_J": 0.0,
+    "vector_force_limits_checked": true,
+    "jerk_limited_reference": [
+      {
+        "speed": 0.1,
+        "distance": 4.0,
+        "duration": 40.63245553203367
+      },
+      {
+        "speed": 0.5,
+        "distance": 4.0,
+        "duration": 9.5
+      },
+      {
+        "speed": 1.0,
+        "distance": 4.499999999999999,
+        "duration": 7.0
+      },
+      {
+        "speed": 3.0,
+        "distance": 25.5,
+        "duration": 15.0
+      },
+      {
+        "speed": 5.0,
+        "distance": 62.5,
+        "duration": 23.0
+      }
+    ],
+    "step_convergence_dt_004_002_001": [
+      {
+        "position_rmse_m": 0.0576829382541116,
+        "position_peak_error_m": 0.10620025042800281,
+        "attitude_peak_error_deg": 6.791982535087374,
+        "tension_peak_N": 2.287846036002535,
+        "force_peak_N": 8.101029567563554,
+        "completed": true
+      },
+      {
+        "position_rmse_m": 0.057681128121898004,
+        "position_peak_error_m": 0.1062034309051627,
+        "attitude_peak_error_deg": 6.79200044736934,
+        "tension_peak_N": 2.2878464204114017,
+        "force_peak_N": 8.101029815345806,
+        "completed": true
+      },
+      {
+        "position_rmse_m": 0.05767966730922456,
+        "position_peak_error_m": 0.10620363397084423,
+        "attitude_peak_error_deg": 6.791999776274334,
+        "tension_peak_N": 2.287847057621938,
+        "force_peak_N": 8.101029830993003,
+        "completed": true
+      }
+    ],
+    "fine_step_rmse_change_m": 1.4608126734441673e-06,
+    "step_convergence_scope": "Nominal taut-cable transport only. Severe wind+delay case is retained separately as an exploratory failure, not certified converged.",
+    "scope": "Reduced model verification; not full quadrotor validation, not real-world validation.",
+    "passed": true
+  },
+  "default_config": {
+    "topology": "distributed",
+    "controller": "cooperative",
+    "vehicle_mass": 0.6,
+    "payload_mass": 0.6,
+    "cable_length": 1.0,
+    "inclination_deg": 20.0,
+    "attachment_radius": 0.15,
+    "attachment_height": 0.05,
+    "stiffness": 1000.0,
+    "damping": 1.0,
+    "force_cap": 12.8,
+    "tilt_deg": 25.0,
+    "actuator_tau": 0.04,
+    "gravity": 9.81,
+    "density": 1.225,
+    "drag_vehicle": 0.02,
+    "drag_payload": 0.09,
+    "wind": 0.0,
+    "command_delay": 0.0,
+    "payload_mass_error": 0.0,
+    "speed": 1.0,
+    "acceleration": 0.5,
+    "jerk": 1.0,
+    "yaw_target_deg": 0.0,
+    "initial_roll_deg": 0.0,
+    "dt": 0.001,
+    "control_dt": 0.01,
+    "seed": 0,
+    "log_dt": 0.02
+  },
+  "scope": "Reduced model only. No NMPC, no full attitude/rotor model, no real-flight guarantee.",
+  "screen_thresholds": {
+    "position_rmse_m": 0.1,
+    "position_peak_m": 0.25,
+    "attitude_peak_deg": 10.0,
+    "cable_deviation_deg": 10.0,
+    "tension_min_N": 0.3,
+    "tension_max_N": 10.0,
+    "vehicle_distance_min_m": 0.45
+  },
+  "metrics_sampling": "every integration step; traces downsampled to 50 Hz",
+  "fine_step_rule": "recheck candidates meeting every research tolerance at half physics dt, same controller period",
+  "stop_rule": "wall-clock deadline or STOP file; no fabricated result for unfinished cases",
+  "runner_source_at_launch_sha256": "409c50903ee07d488a544363a126a212064f84478bb2d581853d2efff4d2928f",
+  "runner_source_snapshot": "simulation/runner_snapshot_409c50903ee0.py"
+}

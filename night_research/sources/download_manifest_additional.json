@@ -1,0 +1,17 @@
+[
+  {
+    "file": "rotortm_snapdragonfly.yaml",
+    "url": "https://raw.githubusercontent.com/arplaboratory/RotorTM/7c70274c00174708b65cd518267c73d9c5abea99/rotor_tm_config/config/uav_params/snapdragonfly.yaml",
+    "bytes": 340
+  },
+  {
+    "file": "crazyflow_first_principles_params.toml",
+    "url": "https://raw.githubusercontent.com/learnsyslab/crazyflow/dbf84eaa77808669254d914998ec139d3f4a425a/crazyflow/dynamics/first_principles/params.toml",
+    "bytes": 4896
+  },
+  {
+    "file": "crazyflow_sysid.md",
+    "url": "https://raw.githubusercontent.com/learnsyslab/crazyflow/dbf84eaa77808669254d914998ec139d3f4a425a/docs/user-guide/dynamics/system-identification.md",
+    "bytes": 5707
+  }
+]

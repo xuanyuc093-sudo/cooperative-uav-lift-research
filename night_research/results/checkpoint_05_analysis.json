@@ -1,0 +1,232 @@
+{
+  "snapshot_utc": "2026-10-31T21:03:31.703361+00:00",
+  "snapshot_file": "checkpoint_05_records.json",
+  "snapshot_sha256": "1a3da9b73dc500bc3ac0e76d1408ceee2043b42262f2823d9bf1e27ccb16c8bc",
+  "records": 499,
+  "effective_configuration_groups": 324,
+  "planned_queue": 7356,
+  "missing_configurations_at_checkpoint": 6857,
+  "stages": {
+    "integrated": 444,
+    "divergence_or_state_guard": 47,
+    "initial_research_constraints_infeasible": 8
+  },
+  "fine_step_agreement_records": 262,
+  "current_source_matches_snapshot": true,
+  "integrity_violations": [],
+  "queue_coverage": [
+    {
+      "family": "baseline",
+      "planned_configurations": 12,
+      "committed_records": 12,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 12,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 12
+    },
+    {
+      "family": "single_factor_payload_mass",
+      "planned_configurations": 48,
+      "committed_records": 48,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 48,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 48
+    },
+    {
+      "family": "single_factor_speed",
+      "planned_configurations": 48,
+      "committed_records": 48,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 44,
+      "early_guards": 4,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 24
+    },
+    {
+      "family": "single_factor_wind",
+      "planned_configurations": 36,
+      "committed_records": 36,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 30,
+      "early_guards": 6,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 8
+    },
+    {
+      "family": "single_factor_command_delay",
+      "planned_configurations": 36,
+      "committed_records": 36,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 32,
+      "early_guards": 4,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 18
+    },
+    {
+      "family": "single_factor_inclination_deg",
+      "planned_configurations": 36,
+      "committed_records": 36,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 28,
+      "early_guards": 0,
+      "initial_infeasible": 8,
+      "fine_step_agreement": 24
+    },
+    {
+      "family": "single_factor_actuator_tau",
+      "planned_configurations": 36,
+      "committed_records": 36,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 36,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 34
+    },
+    {
+      "family": "single_factor_stiffness",
+      "planned_configurations": 24,
+      "committed_records": 24,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 24,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 24
+    },
+    {
+      "family": "single_factor_payload_mass_error",
+      "planned_configurations": 24,
+      "committed_records": 24,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 24,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 12
+    },
+    {
+      "family": "single_factor_force_cap",
+      "planned_configurations": 24,
+      "committed_records": 24,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 24,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 24
+    },
+    {
+      "family": "single_factor_yaw_target_deg",
+      "planned_configurations": 12,
+      "committed_records": 12,
+      "missing_at_checkpoint": 0,
+      "complete_integrations": 12,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 0
+    },
+    {
+      "family": "two_factor",
+      "planned_configurations": 444,
+      "committed_records": 163,
+      "missing_at_checkpoint": 281,
+      "complete_integrations": 130,
+      "early_guards": 33,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 34
+    },
+    {
+      "family": "factorial",
+      "planned_configurations": 6576,
+      "committed_records": 0,
+      "missing_at_checkpoint": 6576,
+      "complete_integrations": 0,
+      "early_guards": 0,
+      "initial_infeasible": 0,
+      "fine_step_agreement": 0
+    }
+  ],
+  "complete_controller_pairs": 126,
+  "controller_pair_rows": 126,
+  "topology_geometry": [
+    {
+      "comparison": "fixed_angle_and_length",
+      "topology": "common",
+      "inclination_deg": 20.0,
+      "initial_min_vehicle_distance_m": 0.5936331395607799,
+      "initial_uav_height_m": 1.9416546207859084,
+      "initial_force_per_vehicle_N": 7.8804223567194756,
+      "initial_force_tilt_deg": 5.199172016981626,
+      "tension_per_cable_N": 2.0879167895977435,
+      "vector_force_map_rank": 3,
+      "fixed_direction_scalar_tension_map_rank": 3
+    },
+    {
+      "comparison": "fixed_angle_and_length",
+      "topology": "offset_common",
+      "inclination_deg": 20.0,
+      "initial_min_vehicle_distance_m": 0.5936331395607799,
+      "initial_uav_height_m": 1.9916546207859085,
+      "initial_force_per_vehicle_N": 7.8804223567194756,
+      "initial_force_tilt_deg": 5.199172016981626,
+      "tension_per_cable_N": 2.0879167895977435,
+      "vector_force_map_rank": 3,
+      "fixed_direction_scalar_tension_map_rank": 3
+    },
+    {
+      "comparison": "fixed_angle_and_length",
+      "topology": "distributed",
+      "inclination_deg": 20.0,
+      "initial_min_vehicle_distance_m": 0.8534407606961114,
+      "initial_uav_height_m": 1.9916546207859085,
+      "initial_force_per_vehicle_N": 7.8804223567194756,
+      "initial_force_tilt_deg": 5.199172016981626,
+      "tension_per_cable_N": 2.0879167895977435,
+      "vector_force_map_rank": 6,
+      "fixed_direction_scalar_tension_map_rank": 3
+    },
+    {
+      "comparison": "matched_initial_vehicle_spacing_static_only",
+      "topology": "common",
+      "inclination_deg": 29.447547909434412,
+      "initial_min_vehicle_distance_m": 0.8534407606961112,
+      "initial_uav_height_m": 1.8727681260669882,
+      "initial_force_per_vehicle_N": 7.925783928164105,
+      "initial_force_tilt_deg": 8.033730789657378,
+      "tension_per_cable_N": 2.2530847467292503,
+      "vector_force_map_rank": 3,
+      "fixed_direction_scalar_tension_map_rank": 3
+    },
+    {
+      "comparison": "matched_initial_vehicle_spacing_static_only",
+      "topology": "offset_common",
+      "inclination_deg": 29.447547909434412,
+      "initial_min_vehicle_distance_m": 0.8534407606961112,
+      "initial_uav_height_m": 1.922768126066988,
+      "initial_force_per_vehicle_N": 7.925783928164105,
+      "initial_force_tilt_deg": 8.033730789657378,
+      "tension_per_cable_N": 2.2530847467290283,
+      "vector_force_map_rank": 3,
+      "fixed_direction_scalar_tension_map_rank": 3
+    },
+    {
+      "comparison": "matched_initial_vehicle_spacing_static_only",
+      "topology": "distributed",
+      "inclination_deg": 20.0,
+      "initial_min_vehicle_distance_m": 0.8534407606961114,
+      "initial_uav_height_m": 1.9916546207859085,
+      "initial_force_per_vehicle_N": 7.8804223567194756,
+      "initial_force_tilt_deg": 5.199172016981626,
+      "tension_per_cable_N": 2.0879167895977435,
+      "vector_force_map_rank": 6,
+      "fixed_direction_scalar_tension_map_rank": 3
+    }
+  ],
+  "interpretation": [
+    "No probability or field safety inference from this parameter queue.",
+    "A passed screen does not require zero command clipping or a positive unused force reserve.",
+    "Both controllers use exact model cable force as feedforward; no sensing/estimation errors are modeled.",
+    "Wind seed changes phase only; no-wind repetitions are not independent uncertainty trials.",
+    "Geometry comparison at equal spacing is static only; no new matched-spacing flight simulation run."
+  ]
+}

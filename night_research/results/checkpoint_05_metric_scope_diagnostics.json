@@ -1,0 +1,10 @@
+{
+  "snapshot_utc": "2026-10-31T21:03:31.703361+00:00",
+  "classification_version": "analysis_v2_scope_annotations_only",
+  "ideal_20deg_cable_rotated_30deg_about_vertical_direction_change_deg": 10.157091631938762,
+  "geometric_example_scope": "One intended rotating formation, not a proof that every 30-degree load yaw requires this cable motion.",
+  "limitation": "The stored trace does not contain cable directions. A new reference-relative cable error cannot be reconstructed from the trace alone.",
+  "preserved_original_screen_flags": true,
+  "updated_runtime_model": false,
+  "revised_interpretation": "Retain all original outcomes. Diagnose structural task mismatch and the meaning of an initial-direction threshold separately; no safety pass is awarded."
+}

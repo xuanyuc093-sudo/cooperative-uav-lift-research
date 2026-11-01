@@ -1,0 +1,30 @@
+{
+  "time_utc": "2026-10-31T21:11:06.280066+00:00",
+  "checkpoint": "05:00 UTC+8",
+  "frozen_records": 499,
+  "frozen_effective_configurations": 324,
+  "integrity_violations": [],
+  "runtime_model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+  "source_preserved": true,
+  "snapshot_sha256": "1a3da9b73dc500bc3ac0e76d1408ceee2043b42262f2823d9bf1e27ccb16c8bc",
+  "supplement_pdf_pages": 19,
+  "combined_pdf_pages": 36,
+  "horizontal_text_boundary_flags": [],
+  "visual_review": [
+    "mass and force reserve table",
+    "geometry comparison table",
+    "speed four-panel figure",
+    "wind-delay classification grid"
+  ],
+  "interpretation_corrections": [
+    "Model true cable force feedforward is an ideal information assumption.",
+    "Command clipping and positive unused force reserve are outside the current pass screen.",
+    "Initial cable direction deviation is not reference tracking error.",
+    "Common-point zero-attitude-error baseline has no external load torque disturbance."
+  ],
+  "original_result_flags_modified": false,
+  "new_flight_simulations_started_this_checkpoint": false,
+  "evidence_scope": "Reduced assumed-parameter model; no real-flight safe speed established.",
+  "final_export_checked_utc": "2026-10-31T21:11:22.598618+00:00",
+  "supplement_pdf_sha256": "8b88314f29965cc3caa55fac436656a3cb40f2b828d0b514e0d5736802bd1fb9"
+}

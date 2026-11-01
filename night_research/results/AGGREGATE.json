@@ -1,0 +1,13 @@
+{
+  "updated_utc": "2026-10-31T22:10:15.327892+00:00",
+  "records": 620,
+  "stages": {
+    "integrated": 564,
+    "divergence_or_state_guard": 47,
+    "initial_research_constraints_infeasible": 8,
+    "wall_clock_deadline": 1
+  },
+  "research_screen_met_count": 328,
+  "fine_step_agreement_count": 328,
+  "scope": "Counts of simulated research tolerances. Do not equate these to safe flights."
+}

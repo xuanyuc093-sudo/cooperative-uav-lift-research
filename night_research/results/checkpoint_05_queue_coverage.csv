@@ -1,0 +1,14 @@
+﻿family,planned_configurations,committed_records,missing_at_checkpoint,complete_integrations,early_guards,initial_infeasible,fine_step_agreement
+baseline,12,12,0,12,0,0,12
+single_factor_payload_mass,48,48,0,48,0,0,48
+single_factor_speed,48,48,0,44,4,0,24
+single_factor_wind,36,36,0,30,6,0,8
+single_factor_command_delay,36,36,0,32,4,0,18
+single_factor_inclination_deg,36,36,0,28,0,8,24
+single_factor_actuator_tau,36,36,0,36,0,0,34
+single_factor_stiffness,24,24,0,24,0,0,24
+single_factor_payload_mass_error,24,24,0,24,0,0,12
+single_factor_force_cap,24,24,0,24,0,0,24
+single_factor_yaw_target_deg,12,12,0,12,0,0,0
+two_factor,444,163,281,130,33,0,34
+factorial,6576,0,6576,0,0,0,0

@@ -1,0 +1,145 @@
+{
+  "scope": "Hypothetical baseline B0. Analytical consistency verified. No closed-loop validation or flight authorization.",
+  "units": "SI; world z upward; gravity [0,0,-9.81]",
+  "n_uav": 3,
+  "uav_mass_kg": 0.6,
+  "payload_mass_kg": 0.6,
+  "cable_length_m": 1.0,
+  "uav_thrust_reference_N": 20.0,
+  "physical_derating_assumption": 0.8,
+  "operational_fraction_of_available": 0.8,
+  "uav_thrust_available_N": 16.0,
+  "uav_thrust_operational_N": 12.8,
+  "payload_box_dimensions_m": [
+    0.3,
+    0.3,
+    0.1
+  ],
+  "payload_inertia_kg_m2": [
+    0.005,
+    0.005,
+    0.009
+  ],
+  "uav_inertia_assumption_kg_m2": [
+    0.003,
+    0.003,
+    0.005
+  ],
+  "payload_attachments_body_m": [
+    [
+      0.15,
+      0.0,
+      0.05
+    ],
+    [
+      -0.07499999999999997,
+      0.1299038105676658,
+      0.05
+    ],
+    [
+      -0.07500000000000007,
+      -0.12990381056766576,
+      0.05
+    ]
+  ],
+  "uav_attachment_body_m": [
+    0,
+    0,
+    0
+  ],
+  "initial_cable_inclination_deg": 20.0,
+  "initial_payload_position_m": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "initial_uav_positions_m": [
+    [
+      0.4920201433256687,
+      0.0,
+      1.9896926207859085
+    ],
+    [
+      -0.24601007166283423,
+      0.42610194329368967,
+      1.9896926207859085
+    ],
+    [
+      -0.24601007166283456,
+      -0.4261019432936895,
+      1.9896926207859085
+    ]
+  ],
+  "initial_uav_thrust_axis_world": [
+    [
+      0.09061818863317425,
+      0.0,
+      0.9958857082461031
+    ],
+    [
+      -0.0453090943165871,
+      0.07847765340125916,
+      0.9958857082461031
+    ],
+    [
+      -0.04530909431658716,
+      -0.07847765340125913,
+      0.9958857082461031
+    ]
+  ],
+  "initial_velocities": "zero",
+  "initial_angular_velocities": "zero",
+  "initial_payload_rotation": "identity",
+  "initial_uav_yaw_rad": 0.0,
+  "motor_first_order_time_constant_s_assumption": 0.04,
+  "cable_mass_base_model_kg": 0.0,
+  "cable_tension_only": true,
+  "cable_structural_limit_N_assumption": 10.0,
+  "planning_tension_min_N_assumption": 0.3,
+  "max_vehicle_tilt_deg_assumption": 25.0,
+  "nominal_speed_m_s_assumption": 1.0,
+  "nominal_acceleration_m_s2_assumption": 0.5,
+  "nominal_jerk_m_s3_assumption": 1.0,
+  "equivalent_dynamic_swing_warning_deg_assumption": 10.0,
+  "wind_base_m_s": [
+    0,
+    0,
+    0
+  ],
+  "wind_sensitivity_m_s": [
+    0,
+    1,
+    3,
+    5
+  ],
+  "rho_kg_m3": 1.225,
+  "uav_cdA_m2_assumption": [
+    0.02,
+    0.02,
+    0.01
+  ],
+  "payload_cdA_m2_assumption": [
+    0.09,
+    0.09,
+    0.09
+  ],
+  "delay_nominal_s_assumption": 0.02,
+  "delay_sensitivity_s": [
+    0,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "simulation_step_s_assumption": 0.001,
+  "attitude_update_hz_assumption": 500,
+  "geometric_outer_update_hz_assumption": 100,
+  "nmpc_update_hz_initial_assumption": 20,
+  "provenance": {
+    "uav_mass_kg": "Sun et al. 2025 experimental scale; assumed adopted for B0",
+    "payload_mass_kg": "Research design choice; not a published experiment result",
+    "cable_length_m": "Sun et al. 2025 experimental cable length adopted",
+    "uav_thrust_reference_N": "Sun et al. 2025 Fig.2 thrust-limit experiment reference; adopted control cap, not certified continuous thrust",
+    "payload_inertia_kg_m2": "Calculated uniform box inertia m/12 * [b^2+c^2,a^2+c^2,a^2+b^2]",
+    "other_parameters": "Explicit research assumptions pending identification; see report parameter table"
+  }
+}

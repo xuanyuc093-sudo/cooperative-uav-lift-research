@@ -1,0 +1,8 @@
+speed_ground_m_s,deceleration_limit_m_s2,jerk_limit_m_s3,delay_s,instantaneous_acceleration_formula_m,jerk_limited_stop_time_s,jerk_limited_distance_with_delay_m,hypothetical_budget_with_reserve_m,peak_deceleration_m_s2
+0.1,0.5,1.0,0.1,0.020000000000000004,0.6324555320336759,0.0416227766016838,0.5416227766016838,0.31622776601683794
+0.25,0.5,1.0,0.1,0.0875,1.0,0.15,0.65,0.5
+0.5,0.5,1.0,0.1,0.3,1.5,0.425,0.925,0.5
+1.0,0.5,1.0,0.1,1.1,2.5,1.35,1.85,0.5
+2.0,0.5,1.0,0.1,4.2,4.5,4.7,5.2,0.5
+3.0,0.5,1.0,0.1,9.3,6.5,10.05,10.55,0.5
+5.0,0.5,1.0,0.1,25.5,10.5,26.75,27.25,0.5

@@ -1,0 +1,31 @@
+2026-10-31T18:40:46.509408+00:00 progress export 0 {"generated_utc": "2026-10-31T18:40:43.288024+00:00", "final": false, "records": 52, "complete": 52, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T18:55:49.919743+00:00 progress export 0 {"generated_utc": "2026-10-31T18:55:46.914527+00:00", "final": false, "records": 84, "complete": 84, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T19:10:53.350848+00:00 progress export 0 {"generated_utc": "2026-10-31T19:10:50.327843+00:00", "final": false, "records": 126, "complete": 122, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T19:25:57.045454+00:00 progress export 0 {"generated_utc": "2026-10-31T19:25:53.733726+00:00", "final": false, "records": 191, "complete": 169, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T19:41:00.963684+00:00 progress export 0 {"generated_utc": "2026-10-31T19:40:57.444931+00:00", "final": false, "records": 227, "complete": 205, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T19:56:04.956353+00:00 progress export 0 {"generated_utc": "2026-10-31T19:56:01.361014+00:00", "final": false, "records": 261, "complete": 239, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T20:11:09.518412+00:00 progress export 0 {"generated_utc": "2026-10-31T20:11:05.390721+00:00", "final": false, "records": 302, "complete": 280, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T20:26:14.052998+00:00 progress export 0 {"generated_utc": "2026-10-31T20:26:09.947726+00:00", "final": false, "records": 346, "complete": 324, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T20:41:18.435695+00:00 progress export 0 {"generated_utc": "2026-10-31T20:41:14.471365+00:00", "final": false, "records": 438, "complete": 394, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T20:56:22.800699+00:00 progress export 0 {"generated_utc": "2026-10-31T20:56:18.838325+00:00", "final": false, "records": 480, "complete": 431, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T21:11:27.698315+00:00 progress export 0 {"generated_utc": "2026-10-31T21:11:23.195671+00:00", "final": false, "records": 518, "complete": 463, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T21:26:32.862513+00:00 progress export 0 {"generated_utc": "2026-10-31T21:26:28.142433+00:00", "final": false, "records": 550, "complete": 495, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T21:41:37.987493+00:00 progress export 0 {"generated_utc": "2026-10-31T21:41:33.265435+00:00", "final": false, "records": 583, "complete": 528, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T21:56:43.085447+00:00 progress export 0 {"generated_utc": "2026-10-31T21:56:38.399722+00:00", "final": false, "records": 612, "complete": 557, "report": "/workspace/uav_lift_overnight/overnight_progress.md"}
+ 
+2026-10-31T22:00:05.425922+00:00 final export 0 FINAL_ARCHIVE /workspace/多架无人机联合吊运_夜间研究成果.zip 7632478
+{"generated_utc": "2026-10-31T22:00:00.411384+00:00", "final": true, "records": 620, "complete": 564, "report": "/workspace/uav_lift_overnight/overnight_report.md"}
+ 

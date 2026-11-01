@@ -1,0 +1,14 @@
+{
+  "time_utc": "2026-10-31T19:17:05.665561+00:00",
+  "checkpoint": "03:00 UTC+8",
+  "pdf_pages": 11,
+  "horizontal_text_boundary_flags": [],
+  "allocation_figure_visually_reviewed": true,
+  "runtime_model_sha256": "9e8dd1181dc27cb6dc4c6247b46a3d0af0b87219cffa2812549fbcee1ea700d4",
+  "changes": [
+    "Added c>0 condition and c=0 conservative limit to continuous-time cable energy derivation.",
+    "Removed unjustified strict-capability-upper-bound wording from research plan.",
+    "Clarified future topic numbering; preserved active experiment source."
+  ],
+  "review_conclusion": "Independent mechanics examples and report export checked. No real-flight safety conclusion established. Background experiments continue to deadline."
+}

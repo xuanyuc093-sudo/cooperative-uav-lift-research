@@ -1,0 +1,75 @@
+{
+  "static_equilibrium_max_state_derivative": {
+    "common": 1.924386576016938e-14,
+    "offset_common": 1.924386576016938e-14,
+    "distributed": 2.220446049250313e-14
+  },
+  "slack_cables_generate_zero_force": true,
+  "conservative_system": {
+    "relative_energy_drift_max": 6.732167366575752e-06,
+    "linear_momentum_drift_max": 4.37549395536371e-16,
+    "angular_momentum_drift_max": 2.1237810935695992e-13,
+    "dt_s": 0.00025,
+    "duration_s": 2.0,
+    "note": "Tension-only activation is nonsmooth. Coarse-step failure and refinement are retained in conservation_diagnostics.json."
+  },
+  "damped_system_max_one_step_energy_increase_J": 0.0,
+  "vector_force_limits_checked": true,
+  "jerk_limited_reference": [
+    {
+      "speed": 0.1,
+      "distance": 4.0,
+      "duration": 40.63245553203367
+    },
+    {
+      "speed": 0.5,
+      "distance": 4.0,
+      "duration": 9.5
+    },
+    {
+      "speed": 1.0,
+      "distance": 4.499999999999999,
+      "duration": 7.0
+    },
+    {
+      "speed": 3.0,
+      "distance": 25.5,
+      "duration": 15.0
+    },
+    {
+      "speed": 5.0,
+      "distance": 62.5,
+      "duration": 23.0
+    }
+  ],
+  "step_convergence_dt_004_002_001": [
+    {
+      "position_rmse_m": 0.0576829382541116,
+      "position_peak_error_m": 0.10620025042800281,
+      "attitude_peak_error_deg": 6.791982535087374,
+      "tension_peak_N": 2.287846036002535,
+      "force_peak_N": 8.101029567563554,
+      "completed": true
+    },
+    {
+      "position_rmse_m": 0.057681128121898004,
+      "position_peak_error_m": 0.1062034309051627,
+      "attitude_peak_error_deg": 6.79200044736934,
+      "tension_peak_N": 2.2878464204114017,
+      "force_peak_N": 8.101029815345806,
+      "completed": true
+    },
+    {
+      "position_rmse_m": 0.05767966730922456,
+      "position_peak_error_m": 0.10620363397084423,
+      "attitude_peak_error_deg": 6.791999776274334,
+      "tension_peak_N": 2.287847057621938,
+      "force_peak_N": 8.101029830993003,
+      "completed": true
+    }
+  ],
+  "fine_step_rmse_change_m": 1.4608126734441673e-06,
+  "step_convergence_scope": "Nominal taut-cable transport only. Severe wind+delay case is retained separately as an exploratory failure, not certified converged.",
+  "scope": "Reduced model verification; not full quadrotor validation, not real-world validation.",
+  "passed": true
+}
