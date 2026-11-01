@@ -1,0 +1,59 @@
+name: Publish verified research assets
+
+on:
+  push:
+    tags:
+      - v1.0.0
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-research-v1.0.0
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: v1.0.0
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify the saved research snapshot
+        run: python tools/verify_publication.py
+      - name: Package the publication commit without running simulation
+        run: |
+          git archive --format=zip --prefix=cooperative-uav-lift-research/ HEAD > "$RUNNER_TEMP/cooperative-uav-lift-research-v1.0.0.zip"
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import os
+          import shutil
+          import zipfile
+          out = Path(os.environ['RUNNER_TEMP'])
+          files = [out/'cooperative-uav-lift-research-v1.0.0.zip']
+          for source, name in [('night_research/comprehensive_report.pdf', 'cooperative-uav-lift-report.pdf'),
+                               ('night_research/overnight_report.docx', 'overnight-research-report.docx')]:
+              target = out/name
+              shutil.copyfile(source, target)
+              files.append(target)
+          with zipfile.ZipFile(files[0]) as archive:
+              assert archive.testzip() is None
+          (out/'SHA256SUMS.txt').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in files))
+          PY
+      - name: Upload and publish the private repository release
+        run: |
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --draft --target "$GITHUB_SHA" --title '多架无人机联合吊运研究：2026-11-01 截止快照' --notes-file RELEASE_NOTES.md
+          fi
+          gh release upload "$RELEASE_TAG" "$RUNNER_TEMP/cooperative-uav-lift-research-v1.0.0.zip" "$RUNNER_TEMP/cooperative-uav-lift-report.pdf" "$RUNNER_TEMP/overnight-research-report.docx" "$RUNNER_TEMP/SHA256SUMS.txt" --clobber
+          gh release edit "$RELEASE_TAG" --draft=false --latest --notes-file RELEASE_NOTES.md
