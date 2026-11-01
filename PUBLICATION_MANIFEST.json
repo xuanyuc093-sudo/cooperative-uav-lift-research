@@ -1,16 +1,22 @@
 {
   "schema": 1,
-  "publication_prepared_utc": "2026-11-01T03:38:04.947311+00:00",
+  "publication_prepared_utc": "2026-11-01T04:14:43.459061+00:00",
   "research_cutoff_utc": "2026-10-31T22:00:00Z",
   "source_delivery_archive_sha256": "dc51ec4189fc9d771a9b0c65ad41bb7d8ed65e6263622f9fbb85fd5cb75bcfea",
   "scope": "Prepared GitHub snapshot; original research files preserved. Manifest excludes itself and Git/cache metadata.",
   "files": {
     ".gitattributes": "798c1a65d83947d6a1279e9e2c421112fc53f08345be39d9a74b76bee875fee1",
-    ".github/workflows/publish-release.yml": "389b4485035fa9167073bbb8ffd3e914739a6ee9fcc6ccdfd3b4ab32a1ba3584",
-    ".github/workflows/verify-publication.yml": "f9507963ad9cc8abe1dcc57b9fa944fb136523f50a18cdcd21e39314b951833d",
+    ".github/workflows/publish-release.yml": "12b49b8fef90e057ce95fd2c7f5c317c95f693f0c26fdc89c56660950db95177",
+    ".github/workflows/verify-publication.yml": "b94d979cbbc25cbcd62254b0536db0af429b028d0325827b76ba9e6a1211f208",
     ".gitignore": "604c5a299453fa7a3719633b0b619d8c755e2fa439f17745c5ad349fceab6bfa",
-    "README.md": "e2b7ffbe9d584a12262a580fc96870b0ea35beba255abce56035f4967273b56a",
-    "RELEASE_NOTES.md": "894ea7780cb6418b65a25c3504caefb7a6ccc70875b932686f9b35619b171f68",
+    "CONCLUSIONS.docx": "a9ed66e0a88a643edd04fbc4bd035625c1e1ed65e69b41d2692fe0b96f70d956",
+    "CONCLUSIONS.md": "f9d903b7b7f9a95219a12e43f659b4d14f8f5aaad84a9142443a24e1748f0737",
+    "CONCLUSIONS.pdf": "d370bb6dbdbe611b4d259a5b8d9159f3380dd910cefd5c27e4a015feba6c263e",
+    "CONCLUSION_EVIDENCE.json": "24d7186f670638356e127aa62445351e9bb4aa011320d55bc3835874f5d78f24",
+    "CONCLUSION_EXPORT_REVIEW.json": "35644854cd178f38c283dcf651eed86ee58e9e897e525260959cb72cd622a229",
+    "CONCLUSION_REVIEW.json": "6e4d6c26559dd6d08d91dce7f11121960e9a6d4428739be420deb6062982004f",
+    "README.md": "fdb7e115d095872338391155fb7aac5874515780a279719d67bd11cab7f9ae84",
+    "RELEASE_NOTES.md": "9111ac812b9bb2d41f333d0557bc8f65cd9c7112dd965984d92bfbfa4d1b3d90",
     "night_research/DELIVERY_RECEIPT.json": "75dfe5b23f89cc33339709d6448f4558ba565cccc5132a8c7fe7222f3fe8afbf",
     "night_research/FINAL_SUMMARY.md": "f3def076fac9f6fea806ce89e026840e3ab7725cbf29a5adfe7de6935ae3c9b3",
     "night_research/README.md": "84e7b556cad4078a90693b7618c9bbcc3bbc860043473c3da1b95d6b284fcf8a",
@@ -1360,6 +1366,10 @@
     "original_v1/requirements.txt": "547991bd60f60f34241799064836e5d935036e00da99d7d90b2765e7a7ce7ca0",
     "original_v1/sources/download_manifest.json": "dab80b30a68a90c69daaa32a2dfc051029313b15c5fac829a90391448b71f356",
     "original_v1/verification.md": "ef23ebcfbb79cc19887636222f4d112bcd1e8b1373f3b3865d9f4266c3882f8c",
+    "report_with_conclusions.pdf": "df13adb2318f55355b005fd2ea7d172836f23acbc44496d30bdd4ef7f739638d",
+    "tools/check_conclusions.py": "e547db14b5712d759264e6fff1c7b8c63a9f613816918a6e8493942faf87e907",
+    "tools/render_conclusions.py": "e7750e96f9d0fe2045d8cf8302c9259af716685a63f06fba56195093c1e3306a",
     "tools/verify_publication.py": "7b89580c188784d2400ca7e7ae14a0b2c406dffdb3b443aaef46eab78596819c"
-  }
+  },
+  "conclusion_revision": "v1.1.0"
 }

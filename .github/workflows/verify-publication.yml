@@ -19,3 +19,5 @@ jobs:
           python-version: '3.12'
       - name: Verify saved files and records without running simulation
         run: python tools/verify_publication.py
+      - name: Check quantitative conclusions against saved evidence
+        run: python tools/check_conclusions.py

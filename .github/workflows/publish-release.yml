@@ -3,14 +3,19 @@ name: Publish verified research assets
 on:
   push:
     tags:
-      - v1.0.0
+      - 'v*'
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag such as v1.1.0'
+        required: true
+        default: v1.1.0
 
 permissions:
   contents: write
 
 concurrency:
-  group: publish-research-v1.0.0
+  group: publish-research-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -20,7 +25,7 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
-      RELEASE_TAG: v1.0.0
+      RELEASE_TAG: ${{ github.ref_type == 'tag' && github.ref_name || inputs.release_tag }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,9 +35,13 @@ jobs:
           python-version: '3.12'
       - name: Verify the saved research snapshot
         run: python tools/verify_publication.py
+      - name: Check conclusions and validate the release tag
+        run: |
+          python tools/check_conclusions.py
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
       - name: Package the publication commit without running simulation
         run: |
-          git archive --format=zip --prefix=cooperative-uav-lift-research/ HEAD > "$RUNNER_TEMP/cooperative-uav-lift-research-v1.0.0.zip"
+          git archive --format=zip --prefix=cooperative-uav-lift-research/ HEAD > "$RUNNER_TEMP/cooperative-uav-lift-research-${RELEASE_TAG}.zip"
           python - <<'PY'
           from pathlib import Path
           import hashlib
@@ -40,8 +49,10 @@ jobs:
           import shutil
           import zipfile
           out = Path(os.environ['RUNNER_TEMP'])
-          files = [out/'cooperative-uav-lift-research-v1.0.0.zip']
-          for source, name in [('night_research/comprehensive_report.pdf', 'cooperative-uav-lift-report.pdf'),
+          files = [out/('cooperative-uav-lift-research-'+os.environ['RELEASE_TAG']+'.zip')]
+          for source, name in [('report_with_conclusions.pdf', 'cooperative-uav-lift-report.pdf'),
+                               ('CONCLUSIONS.pdf', 'research-conclusions.pdf'),
+                               ('CONCLUSIONS.docx', 'research-conclusions.docx'),
                                ('night_research/overnight_report.docx', 'overnight-research-report.docx')]:
               target = out/name
               shutil.copyfile(source, target)
@@ -50,10 +61,10 @@ jobs:
               assert archive.testzip() is None
           (out/'SHA256SUMS.txt').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in files))
           PY
-      - name: Upload and publish the private repository release
+      - name: Upload and publish the verified release
         run: |
           if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            gh release create "$RELEASE_TAG" --draft --target "$GITHUB_SHA" --title '多架无人机联合吊运研究：2026-11-01 截止快照' --notes-file RELEASE_NOTES.md
+            gh release create "$RELEASE_TAG" --draft --target "$GITHUB_SHA" --title "多架无人机联合吊运研究 $RELEASE_TAG：具体结论与实现建议" --notes-file RELEASE_NOTES.md
           fi
-          gh release upload "$RELEASE_TAG" "$RUNNER_TEMP/cooperative-uav-lift-research-v1.0.0.zip" "$RUNNER_TEMP/cooperative-uav-lift-report.pdf" "$RUNNER_TEMP/overnight-research-report.docx" "$RUNNER_TEMP/SHA256SUMS.txt" --clobber
+          gh release upload "$RELEASE_TAG" "$RUNNER_TEMP/cooperative-uav-lift-research-${RELEASE_TAG}.zip" "$RUNNER_TEMP/cooperative-uav-lift-report.pdf" "$RUNNER_TEMP/research-conclusions.pdf" "$RUNNER_TEMP/research-conclusions.docx" "$RUNNER_TEMP/overnight-research-report.docx" "$RUNNER_TEMP/SHA256SUMS.txt" --clobber
           gh release edit "$RELEASE_TAG" --draft=false --latest --notes-file RELEASE_NOTES.md

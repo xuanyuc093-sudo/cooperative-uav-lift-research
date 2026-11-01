@@ -1,0 +1,29 @@
+{
+  "reviewed_utc": "2026-11-01T04:14:43.458808+00:00",
+  "scope": "Existing-evidence conclusion synthesis and publication; no new dynamics simulation.",
+  "unchanged_research_files_checked": 1349,
+  "research_data_modified": false,
+  "displayed_values_cross_checked": true,
+  "conclusion_pdf_visual_review_pages": [
+    2,
+    3
+  ],
+  "export_review": {
+    "conclusion_pages": 6,
+    "combined_pages": 44,
+    "parts": [
+      {
+        "file": "CONCLUSIONS.pdf",
+        "pages": 6
+      },
+      {
+        "file": "night_research/comprehensive_report.pdf",
+        "pages": 38
+      }
+    ],
+    "horizontal_boundary_flags": [],
+    "original_report_replaced": false
+  },
+  "credential_pattern_findings": [],
+  "recommendations_are_distinct_from_hardware_ratings": true
+}

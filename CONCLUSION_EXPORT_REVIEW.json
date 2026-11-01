@@ -1,0 +1,16 @@
+{
+  "conclusion_pages": 6,
+  "combined_pages": 44,
+  "parts": [
+    {
+      "file": "CONCLUSIONS.pdf",
+      "pages": 6
+    },
+    {
+      "file": "night_research/comprehensive_report.pdf",
+      "pages": 38
+    }
+  ],
+  "horizontal_boundary_flags": [],
+  "original_report_replaced": false
+}
